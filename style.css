@@ -75,7 +75,7 @@ body {
 .container2 img {
   width: 350px;
   height: 210px;
-  object-fit: contain;
+  /* object-fit: contain; */
 }
 
 .container3 h3 {
@@ -193,7 +193,7 @@ body {
   }
 
   .container1 nav ul li a {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
     float: right;
   }
 
@@ -202,9 +202,9 @@ body {
   }
 
   .wrapper {
+    height: 65vh;
     display: flex;
     justify-content: space-between;
-    /* height: 60vh; */
     flex-direction: row-reverse;
   }
 
@@ -213,11 +213,14 @@ body {
   }
 
   .container2 img {
-    width: 550px;
+    /* width: 550px; */
+    /* width: 100%; */
+    width: 38vw;
     height: 65vh;
     margin: 0px;
     padding: 0px;
-    object-fit: contain;
+    object-fit: fill;
+    /* object-fit: contain; */
   }
 
   .container3 {
@@ -231,7 +234,7 @@ body {
   }
 
   .container3 p {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     /* font-weight: lighter; */
   }
 }
