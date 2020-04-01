@@ -194,7 +194,6 @@ body {
 
   .container1 nav ul li a {
     font-size: 1.8rem;
-
     float: right;
   }
 
@@ -224,5 +223,15 @@ body {
   .container3 {
     /* margin-top: 90px; */
     margin: 90px 2px auto 2px;
+  }
+
+  .container3 h2 {
+    font-weight: bolder;
+    font-size: 3.5rem;
+  }
+
+  .container3 p {
+    font-size: 2.5rem;
+    /* font-weight: lighter; */
   }
 }
