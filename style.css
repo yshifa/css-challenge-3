@@ -67,58 +67,6 @@ body {
   color: grey;
 }
 
-.container2 {
-  padding: 10px;
-  margin: 20px 2px 30px 2px;
-}
-
-.container2 img {
-  width: 350px;
-  height: 210px;
-  object-fit: contain;
-}
-
-.container3 h3 {
-  color: hsla(229, 11%, 40%, 0.76);
-  letter-spacing: 0.1pc;
-  font-weight: lighter;
-  font-size: 0.91rem;
-  padding: 10px;
-}
-
-.container3 h3 span {
-  background-color: black;
-  color: blanchedalmond;
-  border-radius: 35px;
-  padding: 3px 8px;
-}
-
-.container3 h2 {
-  padding: 10px;
-  font-size: 1.5rem;
-}
-
-.container3 p {
-  padding: 10px;
-  color: hsla(230, 14%, 32%, 0.979);
-}
-
-.container3 h5 {
-  color: hsla(227, 17%, 43%, 0.87);
-  font-weight: lighter;
-  margin: 4px;
-  padding: 10px;
-}
-
-.container3 h5 button {
-  background-color: hsl(0, 100%, 68%);
-  padding: 8px;
-  font-weight: bold;
-  color: white;
-  border-radius: 10px;
-  border-style: hidden;
-}
-
 @media (max-width: 940px) {
   label.logo {
     padding-left: 20px;
@@ -140,32 +88,6 @@ body {
 }
 
 @media (min-width: 700px) {
-  .container2 img {
-    width: 50vh;
-    height: 30vh;
-  }
-  .container3 h3 {
-    font-size: 1.2rem;
-    margin: 8px;
-    padding: 20px;
-  }
-  .container3 h2 {
-    font-size: 1.5rem;
-    margin: 8px;
-    padding: 20px;
-  }
-  .container3 p {
-    font-size: 1.6rem;
-    margin: 8px;
-    padding: 20px;
-  }
-  .container3 h5 {
-    font-size: 1.2rem;
-    margin: 8px;
-  }
-  .container3 h5 button {
-    font-size: 1.2rem;
-  }
   .container1 nav label.checkbtn {
     margin-right: 90px;
   }
@@ -199,42 +121,5 @@ body {
 
   .checkbtn {
     display: none;
-  }
-
-  .wrapper {
-    height: 65vh;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-  }
-
-  .container2 {
-    margin: 70px 3px 1px 3px;
-  }
-
-  .container2 img {
-    /* width: 550px; */
-    /* width: 100%; */
-    width: 38vw;
-    height: 65vh;
-    margin: 0px;
-    padding: 0px;
-    object-fit: fill;
-    /* object-fit: contain; */
-  }
-
-  .container3 {
-    /* margin-top: 90px; */
-    margin: 90px 2px auto 2px;
-  }
-
-  .container3 h2 {
-    font-weight: bolder;
-    font-size: 3.5rem;
-  }
-
-  .container3 p {
-    font-size: 2.3rem;
-    /* font-weight: lighter; */
   }
 }
