@@ -28,6 +28,10 @@ body {
   display: none;
 }
 
+.flex1 {
+  display: none;
+}
+
 nav {
   display: inline;
 }
@@ -37,15 +41,33 @@ nav {
   padding-top: 20px 20px;
 }
 
+/* .flex .list {
+  float: right;
+  margin: auto 40px;
+} */
+
 .flex .list {
   float: right;
   margin: auto 40px;
+  position: fixed;
+  width: 70%;
+  height: 34vh;
+  top: 80px;
+  left: -100%;
+  text-align: center;
+  transform: all 0.5s;
+  background: white;
+  margin: 0 auto;
+}
+
+#check:checked ~ .flex .list {
+  left: 0;
 }
 
 .flex .list li {
   display: block;
   line-height: 50px;
-  margin: 0 8px;
+  margin: 0 10px;
   cursor: pointer;
 }
 
@@ -70,22 +92,6 @@ nav {
   .flex .logo {
     padding-left: 20px;
   }
-
-  .flex .list {
-    position: fixed;
-    width: 70%;
-    height: 34vh;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transform: all 0.5s;
-    background: white;
-    margin: 0 auto;
-  }
-
-  #check:checked ~ .flex .list {
-    left: 0;
-  }
 }
 
 @media (min-width: 700px) {
@@ -100,24 +106,59 @@ nav {
     height: 80px;
   }
 
-  .flex {
+  .logo {
+    display: none;
+  }
+
+  .flex1 .logo1 {
+    line-height: 70px;
+    padding-top: 20px 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
+  .flex1 {
     display: flex;
     justify-content: space-between;
   }
 
-  .list {
+  .list1 {
     display: flex;
   }
 
-  .list li {
+  .list1 li {
     padding-top: 0.8rem;
   }
 
-  .flex .list li.active {
+  .flex1 .list1 li.active {
     border-top: 0;
   }
 
   .checkbtn {
     display: none;
+  }
+
+  .flex1 .list1 li {
+    display: block;
+    line-height: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+  .flex1 .list1 li a {
+    color: black;
+    padding: 8px 16px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 3px;
+  }
+
+  .flex1 .list1 li.active {
+    /* border-top: 1px solid grey; */
+    padding: 11px;
+  }
+
+  .flex1 .list1 li a.active {
+    color: grey;
   }
 }
