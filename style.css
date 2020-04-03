@@ -39,18 +39,14 @@ nav {
 .flex .logo {
   line-height: 70px;
   padding-top: 20px 20px;
+  padding-left: 20px;
 }
-
-/* .flex .list {
-  float: right;
-  margin: auto 40px;
-} */
 
 .flex .list {
   float: right;
   margin: auto 40px;
-  position: fixed;
-  width: 70%;
+  position: relative;
+  width: 65%;
   height: 34vh;
   top: 80px;
   left: -100%;
@@ -88,15 +84,19 @@ nav {
   color: grey;
 }
 
-@media (max-width: 940px) {
-  .flex .logo {
-    padding-left: 20px;
-  }
-}
-
-@media (min-width: 700px) {
-  label .checkbtn {
-    margin-right: 90px;
+@media (min-width: 768px) {
+  .flex .list {
+    float: right;
+    margin: auto 40px;
+    position: relative;
+    width: 85%;
+    height: 50vh;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transform: all 0.5s;
+    background: white;
+    margin: 0 auto;
   }
 }
 
@@ -106,7 +106,7 @@ nav {
     height: 80px;
   }
 
-  .logo {
+  .flex {
     display: none;
   }
 
