@@ -85,22 +85,6 @@ nav {
 }
 
 @media (min-width: 768px) {
-  .flex .list {
-    float: right;
-    margin: auto 40px;
-    position: relative;
-    width: 85%;
-    height: 50vh;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transform: all 0.5s;
-    background: white;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 1024px) {
   header nav {
     width: 95%;
     height: 80px;
@@ -154,7 +138,6 @@ nav {
   }
 
   .flex1 .list1 li.active {
-    /* border-top: 1px solid grey; */
     padding: 11px;
   }
 
