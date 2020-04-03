@@ -28,50 +28,50 @@ body {
   display: none;
 }
 
-.container1 nav {
+nav {
   display: inline;
 }
 
-.container1 nav label.logo {
+.flex .logo {
   line-height: 70px;
   padding-top: 20px 20px;
 }
 
-.container1 nav ul {
+.flex .list {
   float: right;
   margin: auto 40px;
 }
 
-.container1 nav ul li {
+.flex .list li {
   display: block;
   line-height: 50px;
   margin: 0 8px;
   cursor: pointer;
 }
 
-.container1 nav ul li a {
+.flex .list li a {
   color: black;
-  text-transform: uppercase;
   padding: 8px 16px;
   font-size: 1.1rem;
   font-weight: bold;
   border-radius: 3px;
 }
 
-.container1 nav ul li.active {
+.flex .list li.active {
   border-top: 1px solid grey;
   padding: 11px;
 }
 
-.container1 nav ul li a.active {
+.flex .list li a.active {
   color: grey;
 }
 
 @media (max-width: 940px) {
-  label.logo {
+  .flex .logo {
     padding-left: 20px;
   }
-  ul {
+
+  .flex .list {
     position: fixed;
     width: 70%;
     height: 34vh;
@@ -82,41 +82,39 @@ body {
     background: white;
     margin: 0 auto;
   }
-  #check:checked ~ ul {
+
+  #check:checked ~ .flex .list {
     left: 0;
   }
 }
 
 @media (min-width: 700px) {
-  .container1 nav label.checkbtn {
+  label .checkbtn {
     margin-right: 90px;
   }
 }
 
 @media (min-width: 1024px) {
-  .container1 nav {
+  header nav {
     width: 95%;
     height: 80px;
   }
 
-  .container1 nav ul {
-    margin-right: 15px;
-    display: inline;
+  .flex {
+    display: flex;
+    justify-content: space-between;
   }
 
-  .container1 nav ul li {
-    margin: 0 7px;
-    float: left;
+  .list {
+    display: flex;
   }
 
-  .container1 nav ul li.active {
-    border-style: hidden;
-    padding: 0px;
+  .list li {
+    padding-top: 0.8rem;
   }
 
-  .container1 nav ul li a {
-    font-size: 1.1rem;
-    float: right;
+  .flex .list li.active {
+    border-top: 0;
   }
 
   .checkbtn {
