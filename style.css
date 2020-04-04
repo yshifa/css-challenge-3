@@ -28,7 +28,7 @@ body {
   display: none;
 }
 
-.flex1 {
+.desktop-nav-bar {
   display: none;
 }
 
@@ -36,13 +36,13 @@ nav {
   display: inline;
 }
 
-.flex .logo {
+.mobile-nav-bar .logo {
   line-height: 70px;
   padding-top: 20px 20px;
   padding-left: 20px;
 }
 
-.flex .list {
+.mobile-nav-bar .list {
   float: right;
   margin: auto 40px;
   position: relative;
@@ -56,18 +56,18 @@ nav {
   margin: 0 auto;
 }
 
-#check:checked ~ .flex .list {
+#check:checked ~ .mobile-nav-bar .list {
   left: 0;
 }
 
-.flex .list li {
+.mobile-nav-bar .list li {
   display: block;
   line-height: 50px;
   margin: 0 10px;
   cursor: pointer;
 }
 
-.flex .list li a {
+.mobile-nav-bar .list li a {
   color: black;
   padding: 8px 16px;
   font-size: 1.1rem;
@@ -75,12 +75,12 @@ nav {
   border-radius: 3px;
 }
 
-.flex .list li.active {
+.mobile-nav-bar .list li.active {
   border-top: 1px solid grey;
   padding: 11px;
 }
 
-.flex .list li a.active {
+.mobile-nav-bar .list li a.active {
   color: grey;
 }
 
@@ -90,18 +90,18 @@ nav {
     height: 80px;
   }
 
-  .flex {
+  .mobile-nav-bar {
     display: none;
   }
 
-  .flex1 .logo1 {
+  .desktop-nav-bar .logo1 {
     line-height: 70px;
     padding-top: 20px 20px;
     padding-left: 20px;
     padding-top: 10px;
   }
 
-  .flex1 {
+  .desktop-nav-bar {
     display: flex;
     justify-content: space-between;
   }
@@ -114,7 +114,7 @@ nav {
     padding-top: 0.8rem;
   }
 
-  .flex1 .list1 li.active {
+  .desktop-nav-bar .list1 li.active {
     border-top: 0;
   }
 
@@ -122,14 +122,14 @@ nav {
     display: none;
   }
 
-  .flex1 .list1 li {
+  .desktop-nav-bar .list1 li {
     display: block;
     line-height: 50px;
     margin: 0 10px;
     cursor: pointer;
   }
 
-  .flex1 .list1 li a {
+  .desktop-nav-bar .list1 li a {
     color: black;
     padding: 8px 16px;
     font-size: 1.1rem;
@@ -137,11 +137,11 @@ nav {
     border-radius: 3px;
   }
 
-  .flex1 .list1 li.active {
+  .desktop-nav-bar .list1 li.active {
     padding: 11px;
   }
 
-  .flex1 .list1 li a.active {
+  .desktop-nav-bar .list1 li a.active {
     color: grey;
   }
 }
