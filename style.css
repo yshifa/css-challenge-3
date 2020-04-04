@@ -84,6 +84,65 @@ nav {
   color: grey;
 }
 
+.device-image {
+  padding: 10px;
+  margin: 20px 2px 30px 2px;
+}
+
+.device-image img {
+  width: 100%;
+
+  object-fit: contain;
+}
+
+.main h3 {
+  color: hsla(229, 11%, 40%, 0.76);
+  letter-spacing: 0.1pc;
+  font-weight: lighter;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin: 8px;
+}
+
+.main h3 span {
+  background-color: black;
+  color: blanchedalmond;
+  border-radius: 35px;
+  padding: 3px 8px;
+  border-style: hidden;
+}
+
+.main h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  padding: 10px;
+  margin: 8px;
+}
+
+.main p {
+  padding: 10px;
+  margin: 8px;
+  font-size: 1.9rem;
+  color: hsla(230, 14%, 32%, 0.979);
+}
+
+.main h5 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: hsla(227, 17%, 43%, 0.87);
+  margin: 8px;
+  padding: 10px;
+}
+
+.main h5 button {
+  background-color: hsl(0, 100%, 68%);
+  padding: 8px;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  border-style: hidden;
+}
+
 @media (min-width: 768px) {
   header nav {
     width: 95%;
