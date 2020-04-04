@@ -221,6 +221,7 @@ nav {
     margin: 0px;
     padding: 0px;
     margin-top: -5vh;
+    margin-right: -3vh;
   }
 
   .main {
@@ -230,6 +231,38 @@ nav {
     font-size: 2.5rem;
   }
   .main p {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    height: 65vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .device-image {
+    margin: 70px 3px 1px 3px;
+  }
+
+  .device-image img {
+    width: 48vw;
+    height: 65vh;
+    margin: 0px;
+    padding: 0px;
+    margin-right: -33vh;
+  }
+
+  .main {
+    margin: 90px 2px auto 2px;
+  }
+  .main h2 {
+    font-size: 4rem;
+    font-weight: bolder;
+  }
+  .main p {
+    font-size: 2.8rem;
   }
 }
