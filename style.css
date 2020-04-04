@@ -91,7 +91,6 @@ nav {
 
 .device-image img {
   width: 100%;
-
   object-fit: contain;
 }
 
@@ -203,4 +202,37 @@ nav {
   .desktop-nav-bar .list1 li a.active {
     color: grey;
   }
+
+  .wrapper {
+    height: 65vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .device-image {
+    margin: 70px 3px 1px 3px;
+  }
+
+  .device-image img {
+    width: 55vw;
+    height: 65vh;
+  }
+
+  .main {
+    margin: 90px 2px auto 2px;
+  }
+  .main h2 {
+    font-size: 3rem;
+  }
+  .main p {
+    font-size: 2rem;
+  }
 }
+
+/* @media (min-width: 1024px) {
+  .device-image img {
+    width: 350px;
+    height: 210px;
+  }
+} */
